@@ -62,6 +62,7 @@ module MongoMapper
         'database' => uri.path.gsub(/^\//, ''),
         'username' => uri.user,
         'password' => uri.password,
+        'options'  => env['options'] || {}
       }
     end
 
